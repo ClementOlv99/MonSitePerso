@@ -7,7 +7,7 @@ HEALTH_URL   := http://localhost:8080/api/races
 BACKEND_LOG  := backend.log
 WAIT_SECONDS := 120
 
-.PHONY: frontend backend clean setup clean_database
+.PHONY: frontend backend backend_noscrape clean setup clean_database
 
 # 1. Frontend dev server (Vite)
 frontend:
@@ -39,6 +39,10 @@ backend:
 	(cd $(SCRAPER_DIR) && $(PYTHON) Scraper_Manager.py) || { echo "Scraper failed, stopping backend"; exit 1; }; \
 	echo "Scraper finished. Backend still running, Ctrl+C to stop."; \
 	wait $$PID
+
+# 2b. Start Spring Boot in the foreground without running the scraper (Ctrl+C stops it)
+backend_noscrape:
+	cd $(BACKEND_DIR) && ./mvnw spring-boot:run
 
 # 3. Create the scraper's Python venv and install its dependencies
 setup:

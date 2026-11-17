@@ -46,8 +46,21 @@
 	}
 
 	async function selectRider(rider) {
+		selectedRider = rider;
+		const res = await fetch(`${PUBLIC_API_URL}/participation/rider/${selectedRider.id}`);
+		if (res.ok) {
+			schedule = await res.json();
+		}
 		
 	}
+
+	function isOngoing(race) {
+		const today = new Date();
+		var todaygoodformat = (today.getFullYear().toString() + "-" + (today.getMonth() + 1).toString().padStart(2, '0') + "-" + (today.getDate()).toString().padStart(2, '0'))
+		return race.startDate <= todaygoodformat && todaygoodformat <= race.endDate
+	}
+
+	
 </script>
 
 
@@ -62,7 +75,7 @@
 			</thead>
 			<tbody>
 				{#each data.races as race (race.id)}
-					<tr>
+					<tr class:ongoing={isOngoing(race)}>
 						<!-- Calling a function inside the markup: put the call between { } -->
 						<td>{formatDates(race)}</td>
 						<td>{flag(race.country)} {race.name}</td>
@@ -88,13 +101,38 @@
 			<ul>
 				{#each suggestions as rider (rider.id)}
 					<li>
-						<button type="button">
+						<button type="button" onclick={() => selectRider(rider)}>
 							{flag(rider.country)} {rider.prenom} {rider.nom}
 						</button>
 					</li>
 				{/each}
 			</ul>
 		{/if}
+				
+		{#if selectedRider}
+			<h2>
+				{flag(selectedRider.country)} {selectedRider.prenom} {selectedRider.nom}
+			</h2>
+			<table>
+				<thead>
+					<tr><th>Dates</th><th>Course</th><th>Classe</th></tr>
+				</thead>
+				<tbody>
+					{#each schedule as race (race.id)}
+						<tr class:ongoing={isOngoing(race)}>
+							<td>{formatDates(race)}</td>
+							<td>{flag(race.country)} {race.name}</td>
+							<td>{race.category}</td>
+						</tr>
+					{:else}
+						<tr><td colspan="3">No races yet: run the scraper first.</td></tr>
+					{/each}
+				</tbody>
+			</table>
+		{/if}
+
+
+		
 	</aside>
 </div>
 
@@ -104,6 +142,9 @@
 		grid-template-columns: 1fr 1fr;
 		gap: 2rem;
 		align-items: start;
+		padding-inline: 2rem;
+		font-size:20px
+
 	}
 
 	.search {
@@ -143,5 +184,33 @@
 .search button:hover {
 	background: #eee;
 }
+
+tr.ongoing {
+	color: rgb(179, 29, 156)
+}
+
+.rider-panel h2 {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+th {
+
+        padding: 8px 12px;  
+		border-bottom: 1px solid #444; 
+		text-align: left;  
+}
+
+td {
+        padding: 8px 12px;  
+		border-bottom: 1px solid #444;   
+}
+
+table {
+        border-collapse: collapse;  
+}
+
+
 
 </style>

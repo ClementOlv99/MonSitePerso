@@ -75,7 +75,7 @@ def scrape_races(year):
             case "La Vuelta Ciclista a España":
                 dfRaces.at[i, "Class"] = "VUELTA"
             case "Milano-Sanremo" | "Paris-Roubaix Hauts-de-France" | "Liège-Bastogne-Liège" | "Il Lombardia" | "Ronde van Vlaanderen ME":
-                dfRaces.at[i, "Class"] = "MONUMENT"
+                dfRaces.at[i, "Class"] = "Monument"
 
     dfRaces = dfRaces.rename(columns={
         "RaceURL": "raceUrl",
