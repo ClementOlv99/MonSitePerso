@@ -7,7 +7,7 @@ HEALTH_URL   := http://localhost:8080/api/races
 BACKEND_LOG  := backend.log
 WAIT_SECONDS := 120
 
-.PHONY: frontend backend clean
+.PHONY: frontend backend clean setup clean_database
 
 # 1. Frontend dev server (Vite)
 frontend:
@@ -33,10 +33,25 @@ backend:
 		echo "Backend did not answer after $(WAIT_SECONDS)s"; exit 1; \
 	fi; \
 	echo "Backend is up, running the scraper..."; \
-	cd $(SCRAPER_DIR) && $(PYTHON) Scraper_Manager.py; \
+	if [ ! -x $(SCRAPER_DIR)/$(PYTHON) ]; then \
+		echo "No Python venv in $(SCRAPER_DIR)/venv, run 'make setup' first"; exit 1; \
+	fi; \
+	(cd $(SCRAPER_DIR) && $(PYTHON) Scraper_Manager.py) || { echo "Scraper failed, stopping backend"; exit 1; }; \
 	echo "Scraper finished. Backend still running, Ctrl+C to stop."; \
 	wait $$PID
 
-# 3. Remove every compiled Java class file
+# 3. Create the scraper's Python venv and install its dependencies
+setup:
+	cd $(SCRAPER_DIR) && python3 -m venv venv && venv/bin/pip install -r requirements.txt
+
+# 4. Remove every compiled Java class file
 clean:
 	find . -name "*.class" -not -path "*/node_modules/*" -delete
+
+# 5. Delete every local H2 database file (refuses while the backend is running)
+clean_database:
+	@if curl -s -o /dev/null $(HEALTH_URL); then \
+		echo "Backend is running on port 8080, stop it before cleaning the database"; exit 1; \
+	fi
+	find . \( -name "*.mv.db" -o -name "*.trace.db" -o -name "*.lock.db" \) \
+		-not -path "*/node_modules/*" -not -path "*/venv/*" -print -delete

@@ -124,3 +124,11 @@ bin/
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+# ==========================================
+# Local databases (H2) - generated at runtime
+# ==========================================
+*.mv.db
+*.trace.db
+*.lock.db
+backend/data/
