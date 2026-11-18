@@ -6,27 +6,42 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import org.springframework.stereotype.Service;
+
+import Siteweb.backend.participation.ParticipationRepository;
+import Siteweb.backend.rider.RiderRepository;
 import jakarta.transaction.Transactional;
 
 @Service
 public class RaceService {
 
     private final RaceRepository raceRepository;
+    private final ParticipationRepository participationRepository;
+    private final RiderRepository riderRepository;
 
 
-    public RaceService(RaceRepository raceRepository){
+    public RaceService(RaceRepository raceRepository, ParticipationRepository participationRepository, RiderRepository riderRepository){
         this.raceRepository = raceRepository;
+        this.participationRepository = participationRepository;
+        this.riderRepository = riderRepository;
     }
 
 
     /**
      * Upserts races by raceUrl: existing races are updated in place (keeping their id),
-     * new ones are inserted. Races absent from the import are left untouched.
+     * new ones are inserted. Races absent from the import are left untouched, except
+     * when the import is the first one for a new year: the table is then cleared
+     * before importing, so the previous year's schedule is removed.
      */
     @Transactional
     public int importRaces(List<RaceDTO> dtos) throws IllegalArgumentException {
         if (dtos.isEmpty()) {
             throw new IllegalArgumentException("No races to import");
+        }
+
+        if (raceRepository.findAllByYear(dtos.get(0).startDate().getYear()).isEmpty()) {
+            participationRepository.deleteAllInBatch();
+            raceRepository.deleteAllInBatch();
+            riderRepository.deleteAllInBatch();
         }
 
 

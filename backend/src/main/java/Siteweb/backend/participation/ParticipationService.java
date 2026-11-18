@@ -39,6 +39,8 @@ public class ParticipationService {
             return 0;
         }
 
+        
+
         Set<String> raceUrls = new HashSet<>();
         Set<String> riderUrls = new HashSet<>();
         for (StartListDTO entry : entries) {
