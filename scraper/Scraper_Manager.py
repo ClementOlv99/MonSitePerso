@@ -20,8 +20,8 @@ def get_season_year():
 def get_today():
     today = datetime.date.today()
     if (today.month == 11) or (today.month == 12):
-        today = datetime.date(today.year+1, 1, 1)
-        #today = datetime.date(2026, 4, 18)
+        #today = datetime.date(today.year+1, 1, 1)
+        today = datetime.date(2026, 1, 18)
         return today
     else:
         return today
