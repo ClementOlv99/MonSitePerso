@@ -2,777 +2,649 @@
   {
     "category":"UWT",
     "country":"au",
-    "name":"Santos Tour Down Under",
-    "raceUrl":"race\/tour-down-under-2026-gc",
-    "startDate":"2026-01-20",
-    "endDate":"2026-01-25"
+    "name":"Santos Tour Down Under ME",
+    "raceUrl":"race\/tour-down-under-2027-gc",
+    "startDate":"2027-01-19",
+    "endDate":"2027-01-24"
   },
   {
     "category":"UWT",
     "country":"au",
     "name":"Mapei Cadel Evans Great Ocean Road Race ME",
-    "raceUrl":"race\/great-ocean-road-race-2026-result",
-    "startDate":"2026-02-01",
-    "endDate":"2026-02-01"
+    "raceUrl":"race\/great-ocean-road-race-2027-result",
+    "startDate":"2027-01-31",
+    "endDate":"2027-01-31"
   },
   {
     "category":"UWT",
     "country":"ae",
     "name":"UAE Tour",
-    "raceUrl":"race\/uae-tour-2026-gc",
-    "startDate":"2026-02-16",
-    "endDate":"2026-02-22"
+    "raceUrl":"race\/uae-tour-2027-gc",
+    "startDate":"2027-02-15",
+    "endDate":"2027-02-21"
   },
   {
     "category":"UWT",
     "country":"be",
     "name":"Omloop Nieuwsblad ME",
-    "raceUrl":"race\/omloop-het-nieuwsblad-2026-result",
-    "startDate":"2026-02-28",
-    "endDate":"2026-02-28"
+    "raceUrl":"race\/omloop-het-nieuwsblad-2027-result",
+    "startDate":"2027-02-27",
+    "endDate":"2027-02-27"
   },
   {
     "category":"UWT",
     "country":"it",
     "name":"Strade Bianche",
-    "raceUrl":"race\/strade-bianche-2026",
-    "startDate":"2026-03-07",
-    "endDate":"2026-03-07"
+    "raceUrl":"race\/strade-bianche-2027-result",
+    "startDate":"2027-03-06",
+    "endDate":"2027-03-06"
   },
   {
     "category":"UWT",
     "country":"fr",
     "name":"Paris-Nice",
-    "raceUrl":"race\/paris-nice-2026-gc",
-    "startDate":"2026-03-08",
-    "endDate":"2026-03-15"
+    "raceUrl":"race\/paris-nice-2027-gc",
+    "startDate":"2027-03-07",
+    "endDate":"2027-03-14"
   },
   {
     "category":"UWT",
     "country":"it",
     "name":"Tirreno-Adriatico",
-    "raceUrl":"race\/tirreno-adriatico-2026-gc",
-    "startDate":"2026-03-09",
-    "endDate":"2026-03-15"
+    "raceUrl":"race\/tirreno-adriatico-2027-gc",
+    "startDate":"2027-03-08",
+    "endDate":"2027-03-14"
   },
   {
     "category":"Monument",
     "country":"it",
     "name":"Milano-Sanremo",
-    "raceUrl":"race\/milano-sanremo-2026-result",
-    "startDate":"2026-03-21",
-    "endDate":"2026-03-21"
+    "raceUrl":"race\/milano-sanremo-2027-result",
+    "startDate":"2027-03-20",
+    "endDate":"2027-03-20"
   },
   {
     "category":"UWT",
     "country":"es",
     "name":"Volta Ciclista a Catalunya",
-    "raceUrl":"race\/volta-a-catalunya-2026-gc",
-    "startDate":"2026-03-23",
-    "endDate":"2026-03-29"
+    "raceUrl":"race\/volta-a-catalunya-2027-gc",
+    "startDate":"2027-03-22",
+    "endDate":"2027-03-28"
   },
   {
     "category":"UWT",
     "country":"be",
-    "name":"Ronde Van Brugge - Tour of Bruges ME",
-    "raceUrl":"race\/classic-brugge-de-panne-2026-result",
-    "startDate":"2026-03-25",
-    "endDate":"2026-03-25"
+    "name":"Ronde van Brugge - Tour of Bruges ME",
+    "raceUrl":"race\/classic-brugge-de-panne-2027-result",
+    "startDate":"2027-03-24",
+    "endDate":"2027-03-24"
   },
   {
     "category":"UWT",
     "country":"be",
     "name":"E3 Saxo Classic ME",
-    "raceUrl":"race\/e3-harelbeke-2026-result",
-    "startDate":"2026-03-27",
-    "endDate":"2026-03-27"
+    "raceUrl":"race\/e3-harelbeke-2027-result",
+    "startDate":"2027-03-26",
+    "endDate":"2027-03-26"
   },
   {
     "category":"UWT",
     "country":"be",
     "name":"In Flanders Fields - From Middelkerke to Wevelgem",
-    "raceUrl":"race\/gent-wevelgem-2026-result",
-    "startDate":"2026-03-29",
-    "endDate":"2026-03-29"
+    "raceUrl":"race\/gent-wevelgem-2027-result",
+    "startDate":"2027-03-28",
+    "endDate":"2027-03-28"
   },
   {
     "category":"UWT",
     "country":"be",
     "name":"Dwars door Vlaanderen - A travers la Flandre ME",
-    "raceUrl":"race\/dwars-door-vlaanderen-2026-result",
-    "startDate":"2026-04-01",
-    "endDate":"2026-04-01"
+    "raceUrl":"race\/dwars-door-vlaanderen-2027-result",
+    "startDate":"2027-03-31",
+    "endDate":"2027-03-31"
   },
   {
     "category":"Monument",
     "country":"be",
     "name":"Ronde van Vlaanderen ME",
-    "raceUrl":"race\/ronde-van-vlaanderen-2026-result",
-    "startDate":"2026-04-05",
-    "endDate":"2026-04-05"
+    "raceUrl":"race\/ronde-van-vlaanderen-2027-result",
+    "startDate":"2027-04-04",
+    "endDate":"2027-04-04"
   },
   {
     "category":"UWT",
     "country":"es",
     "name":"Itzulia Basque Country",
-    "raceUrl":"race\/itzulia-basque-country-2026-gc",
-    "startDate":"2026-04-06",
-    "endDate":"2026-04-11"
+    "raceUrl":"race\/itzulia-basque-country-2027-gc",
+    "startDate":"2027-04-05",
+    "endDate":"2027-04-10"
   },
   {
     "category":"Monument",
     "country":"fr",
     "name":"Paris-Roubaix Hauts-de-France",
-    "raceUrl":"race\/paris-roubaix-2026-result",
-    "startDate":"2026-04-12",
-    "endDate":"2026-04-12"
+    "raceUrl":"race\/paris-roubaix-2027-result",
+    "startDate":"2027-04-11",
+    "endDate":"2027-04-11"
   },
   {
     "category":"UWT",
     "country":"nl",
     "name":"Amstel Gold Race",
-    "raceUrl":"race\/amstel-gold-race-2026-result",
-    "startDate":"2026-04-19",
-    "endDate":"2026-04-19"
+    "raceUrl":"race\/amstel-gold-race-2027-result",
+    "startDate":"2027-04-18",
+    "endDate":"2027-04-18"
   },
   {
     "category":"UWT",
     "country":"be",
     "name":"La Flèche Wallonne",
-    "raceUrl":"race\/la-fleche-wallonne-2026-result",
-    "startDate":"2026-04-22",
-    "endDate":"2026-04-22"
+    "raceUrl":"race\/la-fleche-wallonne-2027-result",
+    "startDate":"2027-04-21",
+    "endDate":"2027-04-21"
   },
   {
     "category":"Monument",
     "country":"be",
     "name":"Liège-Bastogne-Liège",
-    "raceUrl":"race\/liege-bastogne-liege-2026-result",
-    "startDate":"2026-04-26",
-    "endDate":"2026-04-26"
+    "raceUrl":"race\/liege-bastogne-liege-2027-result",
+    "startDate":"2027-04-25",
+    "endDate":"2027-04-25"
   },
   {
     "category":"UWT",
     "country":"ch",
     "name":"Tour de Romandie",
-    "raceUrl":"race\/tour-de-romandie-2026-gc",
-    "startDate":"2026-04-28",
-    "endDate":"2026-05-03"
+    "raceUrl":"race\/tour-de-romandie-2027-gc",
+    "startDate":"2027-04-27",
+    "endDate":"2027-05-02"
   },
   {
     "category":"UWT",
     "country":"de",
     "name":"Eschborn-Frankfurt",
-    "raceUrl":"race\/eschborn-frankfurt-2026-result",
-    "startDate":"2026-05-01",
-    "endDate":"2026-05-01"
+    "raceUrl":"race\/eschborn-frankfurt-2027-result",
+    "startDate":"2027-05-01",
+    "endDate":"2027-05-01"
   },
   {
     "category":"GIRO",
     "country":"it",
     "name":"Giro d'Italia",
-    "raceUrl":"race\/giro-d-italia-2026-gc",
-    "startDate":"2026-05-08",
-    "endDate":"2026-05-31"
+    "raceUrl":"race\/giro-d-italia-2027-gc",
+    "startDate":"2027-05-08",
+    "endDate":"2027-05-30"
   },
   {
     "category":"UWT",
     "country":"fr",
     "name":"Tour Auvergne - Rhône-Alpes",
-    "raceUrl":"race\/tour-auvergne-rhone-alpes-2026-gc",
-    "startDate":"2026-06-07",
-    "endDate":"2026-06-14"
+    "raceUrl":"race\/tour-auvergne-rhone-alpes-2027-gc",
+    "startDate":"2027-06-06",
+    "endDate":"2027-06-13"
   },
   {
     "category":"UWT",
     "country":"dk",
     "name":"Copenhagen Sprint ME",
-    "raceUrl":"race\/copenhagen-sprint-2026-result",
-    "startDate":"2026-06-14",
-    "endDate":"2026-06-14"
+    "raceUrl":"race\/copenhagen-sprint-2027-result",
+    "startDate":"2027-06-13",
+    "endDate":"2027-06-13"
   },
   {
     "category":"UWT",
     "country":"ch",
     "name":"Tour de Suisse",
-    "raceUrl":"race\/tour-de-suisse-2026-gc",
-    "startDate":"2026-06-17",
-    "endDate":"2026-06-21"
+    "raceUrl":"race\/tour-de-suisse-2027-gc",
+    "startDate":"2027-06-16",
+    "endDate":"2027-06-20"
   },
   {
     "category":"TDF",
     "country":"fr",
     "name":"Tour de France",
-    "raceUrl":"race\/tour-de-france-2026",
-    "startDate":"2026-07-04",
-    "endDate":"2026-07-26"
+    "raceUrl":"race\/tour-de-france-2027",
+    "startDate":"2027-07-02",
+    "endDate":"2027-07-25"
   },
   {
     "category":"UWT",
     "country":"es",
     "name":"DSSK (Donostia San Sebastian Klasikoa)",
-    "raceUrl":"race\/san-sebastian-2026-result",
-    "startDate":"2026-08-01",
-    "endDate":"2026-08-01"
+    "raceUrl":"race\/san-sebastian-2027-result",
+    "startDate":"2027-07-31",
+    "endDate":"2027-07-31"
   },
   {
     "category":"UWT",
     "country":"pl",
     "name":"Tour de Pologne",
-    "raceUrl":"race\/tour-de-pologne-2026-gc",
-    "startDate":"2026-08-03",
-    "endDate":"2026-08-09"
+    "raceUrl":"race\/tour-de-pologne-2027-gc",
+    "startDate":"2027-08-02",
+    "endDate":"2027-08-08"
   },
   {
     "category":"UWT",
     "country":"de",
     "name":"ADAC Cyclassics",
-    "raceUrl":"race\/cyclassics-hamburg-2026-result",
-    "startDate":"2026-08-16",
-    "endDate":"2026-08-16"
+    "raceUrl":"race\/cyclassics-hamburg-2027-result",
+    "startDate":"2027-08-15",
+    "endDate":"2027-08-15"
   },
   {
     "category":"UWT",
     "country":"be",
     "name":"Renewi Tour",
-    "raceUrl":"race\/renewi-tour-2026-gc",
-    "startDate":"2026-08-19",
-    "endDate":"2026-08-23"
-  },
-  {
-    "category":"VUELTA",
-    "country":"es",
-    "name":"La Vuelta Ciclista a España",
-    "raceUrl":"race\/vuelta-a-espana-2026-gc",
-    "startDate":"2026-08-22",
-    "endDate":"2026-09-13"
+    "raceUrl":"race\/renewi-tour-2027-gc",
+    "startDate":"2027-08-18",
+    "endDate":"2027-08-22"
   },
   {
     "category":"UWT",
     "country":"fr",
     "name":"Bretagne Classic - CIC",
-    "raceUrl":"race\/bretagne-classic-2026-result",
-    "startDate":"2026-08-30",
-    "endDate":"2026-08-30"
+    "raceUrl":"race\/bretagne-classic-2027-result",
+    "startDate":"2027-08-22",
+    "endDate":"2027-08-22"
+  },
+  {
+    "category":"VUELTA",
+    "country":"es",
+    "name":"La Vuelta Ciclista a España",
+    "raceUrl":"race\/vuelta-a-espana-2027-gc",
+    "startDate":"2027-09-04",
+    "endDate":"2027-09-24"
   },
   {
     "category":"UWT",
     "country":"ca",
     "name":"Grand Prix Cycliste de Québec",
-    "raceUrl":"race\/gp-quebec-2026-result",
-    "startDate":"2026-09-11",
-    "endDate":"2026-09-11"
+    "raceUrl":"race\/gp-quebec-2027-result",
+    "startDate":"2027-09-10",
+    "endDate":"2027-09-10"
   },
   {
     "category":"UWT",
     "country":"ca",
     "name":"Grand Prix Cycliste de Montréal",
-    "raceUrl":"race\/gp-montreal-2026-result",
-    "startDate":"2026-09-13",
-    "endDate":"2026-09-13"
+    "raceUrl":"race\/gp-montreal-2027-result",
+    "startDate":"2027-09-12",
+    "endDate":"2027-09-12"
   },
   {
     "category":"Monument",
     "country":"it",
     "name":"Il Lombardia",
-    "raceUrl":"race\/il-lombardia-2026-result",
-    "startDate":"2026-10-10",
-    "endDate":"2026-10-10"
+    "raceUrl":"race\/il-lombardia-2027-result",
+    "startDate":"2027-10-09",
+    "endDate":"2027-10-09"
   },
   {
     "category":"UWT",
     "country":"cn",
     "name":"Tour of Guangxi",
-    "raceUrl":"race\/tour-of-guangxi-2026-gc",
-    "startDate":"2026-10-13",
-    "endDate":"2026-10-18"
+    "raceUrl":"race\/tour-of-guangxi-2027-gc",
+    "startDate":"2027-10-12",
+    "endDate":"2027-10-17"
   },
   {
     "category":"Pro",
     "country":"sa",
     "name":"AlUla Tour",
-    "raceUrl":"race\/alula-tour-2026-gc",
-    "startDate":"2026-01-27",
-    "endDate":"2026-01-31"
+    "raceUrl":"race\/alula-tour-2027-gc",
+    "startDate":"2027-01-25",
+    "endDate":"2027-01-29"
   },
   {
     "category":"Pro",
     "country":"au",
     "name":"Surf Coast Classic - Men",
-    "raceUrl":"race\/race-torquay-2026-result",
-    "startDate":"2026-01-29",
-    "endDate":"2026-01-29"
-  },
-  {
-    "category":"Pro",
-    "country":"es",
-    "name":"Volta Comunitat Valenciana",
-    "raceUrl":"race\/vuelta-a-la-comunidad-valenciana-2026-gc",
-    "startDate":"2026-02-04",
-    "endDate":"2026-02-08"
-  },
-  {
-    "category":"Pro",
-    "country":"om",
-    "name":"Muscat Classic",
-    "raceUrl":"race\/muscat-classic-2026-result",
-    "startDate":"2026-02-06",
-    "endDate":"2026-02-06"
-  },
-  {
-    "category":"Pro",
-    "country":"om",
-    "name":"Tour of Oman",
-    "raceUrl":"race\/tour-of-oman-2026-gc",
-    "startDate":"2026-02-07",
-    "endDate":"2026-02-11"
-  },
-  {
-    "category":"Pro",
-    "country":"pt",
-    "name":"Figueira Champions Classic",
-    "raceUrl":"race\/figueira-champions-classic-2026-result",
-    "startDate":"2026-02-14",
-    "endDate":"2026-02-14"
+    "raceUrl":"race\/race-torquay-2027-result",
+    "startDate":"2027-01-28",
+    "endDate":"2027-01-28"
   },
   {
     "category":"Pro",
     "country":"es",
     "name":"Clasica de Almeria",
-    "raceUrl":"race\/clasica-de-almeria-2026-result",
-    "startDate":"2026-02-15",
-    "endDate":"2026-02-15"
-  },
-  {
-    "category":"Pro",
-    "country":"pt",
-    "name":"Volta ao Algarve em Bicicleta",
-    "raceUrl":"race\/volta-ao-algarve-2026-gc",
-    "startDate":"2026-02-18",
-    "endDate":"2026-02-22"
-  },
-  {
-    "category":"Pro",
-    "country":"es",
-    "name":"Vuelta a Andalucia Ruta Ciclista Del Sol",
-    "raceUrl":"race\/ruta-del-sol-2026-gc",
-    "startDate":"2026-02-18",
-    "endDate":"2026-02-22"
+    "raceUrl":"race\/clasica-de-almeria-2027-result",
+    "startDate":"2027-02-14",
+    "endDate":"2027-02-14"
   },
   {
     "category":"Pro",
     "country":"fr",
     "name":"Faun-Ardèche Classic",
-    "raceUrl":"race\/faun-ardeche-classic-2026-result",
-    "startDate":"2026-02-28",
-    "endDate":"2026-02-28"
+    "raceUrl":"race\/faun-ardeche-classic-2027-result",
+    "startDate":"2027-02-27",
+    "endDate":"2027-02-27"
   },
   {
     "category":"Pro",
     "country":"fr",
     "name":"Faun Drome Classic",
-    "raceUrl":"race\/la-drome-classic-2026-result",
-    "startDate":"2026-03-01",
-    "endDate":"2026-03-01"
+    "raceUrl":"race\/la-drome-classic-2027-result",
+    "startDate":"2027-02-28",
+    "endDate":"2027-02-28"
   },
   {
     "category":"Pro",
     "country":"be",
     "name":"Kuurne - Brussel - Kuurne",
-    "raceUrl":"race\/kuurne-brussel-kuurne-2026-result",
-    "startDate":"2026-03-01",
-    "endDate":"2026-03-01"
-  },
-  {
-    "category":"Pro",
-    "country":"it",
-    "name":"Trofeo Laigueglia",
-    "raceUrl":"race\/trofeo-laigueglia-2026-result",
-    "startDate":"2026-03-04",
-    "endDate":"2026-03-04"
+    "raceUrl":"race\/kuurne-brussel-kuurne-2027-result",
+    "startDate":"2027-02-28",
+    "endDate":"2027-02-28"
   },
   {
     "category":"Pro",
     "country":"be",
     "name":"Danilith Nokere Koerse",
-    "raceUrl":"race\/nokere-koerse-2026-result",
-    "startDate":"2026-03-18",
-    "endDate":"2026-03-18"
+    "raceUrl":"race\/nokere-koerse-2027-result",
+    "startDate":"2027-03-17",
+    "endDate":"2027-03-17"
   },
   {
     "category":"Pro",
     "country":"it",
     "name":"Milano - Torino",
-    "raceUrl":"race\/milano-torino-2026-result",
-    "startDate":"2026-03-18",
-    "endDate":"2026-03-18"
-  },
-  {
-    "category":"Pro",
-    "country":"fr",
-    "name":"Grand Prix de Denain - Porte du Hainaut",
-    "raceUrl":"race\/gp-de-denain-2026-result",
-    "startDate":"2026-03-19",
-    "endDate":"2026-03-19"
+    "raceUrl":"race\/milano-torino-2027-result",
+    "startDate":"2027-03-17",
+    "endDate":"2027-03-17"
   },
   {
     "category":"Pro",
     "country":"be",
     "name":"Bredene Koksijde Classic",
-    "raceUrl":"race\/bredene-koksijde-classic-2026-result",
-    "startDate":"2026-03-20",
-    "endDate":"2026-03-20"
+    "raceUrl":"race\/bredene-koksijde-classic-2027-result",
+    "startDate":"2027-03-19",
+    "endDate":"2027-03-19"
   },
   {
     "category":"Pro",
     "country":"es",
     "name":"Gran Premio Miguel Indurain",
-    "raceUrl":"race\/gran-premio-miguel-indurain-2026-result",
-    "startDate":"2026-04-04",
-    "endDate":"2026-04-04"
+    "raceUrl":"race\/gran-premio-miguel-indurain-2027-result",
+    "startDate":"2027-04-03",
+    "endDate":"2027-04-03"
   },
   {
     "category":"Pro",
     "country":"fr",
     "name":"Région Pays de la Loire Tour",
-    "raceUrl":"race\/region-pays-de-la-loire-2026-gc",
-    "startDate":"2026-04-07",
-    "endDate":"2026-04-10"
+    "raceUrl":"race\/region-pays-de-la-loire-2027-gc",
+    "startDate":"2027-04-06",
+    "endDate":"2027-04-09"
   },
   {
     "category":"Pro",
     "country":"be",
     "name":"Scheldeprijs",
-    "raceUrl":"race\/scheldeprijs-2026-result",
-    "startDate":"2026-04-08",
-    "endDate":"2026-04-08"
-  },
-  {
-    "category":"Pro",
-    "country":"cn",
-    "name":"Tour of Hainan",
-    "raceUrl":"race\/tour-of-hainan-2026-gc",
-    "startDate":"2026-04-15",
-    "endDate":"2026-04-19"
+    "raceUrl":"race\/scheldeprijs-2027-result",
+    "startDate":"2027-04-07",
+    "endDate":"2027-04-07"
   },
   {
     "category":"Pro",
     "country":"be",
-    "name":"De Brabantse Pijl - La Flèche Brabançonne ME",
-    "raceUrl":"race\/brabantse-pijl-2026-result",
-    "startDate":"2026-04-17",
-    "endDate":"2026-04-17"
+    "name":"De Brabantse Pijl - La Flèche Brabançonne",
+    "raceUrl":"race\/brabantse-pijl-2027-result",
+    "startDate":"2027-04-16",
+    "endDate":"2027-04-16"
   },
   {
     "category":"Pro",
     "country":"it",
     "name":"Tour of the Alps",
-    "raceUrl":"race\/tour-of-the-alps-2026-gc",
-    "startDate":"2026-04-20",
-    "endDate":"2026-04-24"
+    "raceUrl":"race\/tour-of-the-alps-2027-gc",
+    "startDate":"2027-04-19",
+    "endDate":"2027-04-23"
   },
   {
     "category":"Pro",
     "country":"tr",
-    "name":"Presidential Cycling Tour of Türkiye",
-    "raceUrl":"race\/tour-of-turkey-2026-gc",
-    "startDate":"2026-04-26",
-    "endDate":"2026-05-03"
+    "name":"Presidential Cycling Tour of Turkiye",
+    "raceUrl":"race\/tour-of-turkey-2027-gc",
+    "startDate":"2027-04-25",
+    "endDate":"2027-05-02"
   },
   {
     "category":"Pro",
     "country":"fr",
     "name":"Grand Prix du Morbihan",
-    "raceUrl":"race\/gp-de-plumelec-2026-result",
-    "startDate":"2026-05-09",
-    "endDate":"2026-05-09"
+    "raceUrl":"race\/gp-de-plumelec-2027-result",
+    "startDate":"2027-05-08",
+    "endDate":"2027-05-08"
   },
   {
     "category":"Pro",
     "country":"fr",
     "name":"Tro-Bro Léon",
-    "raceUrl":"race\/tro-bro-leon-2026-result",
-    "startDate":"2026-05-10",
-    "endDate":"2026-05-10"
+    "raceUrl":"race\/tro-bro-leon-2027-result",
+    "startDate":"2027-05-09",
+    "endDate":"2027-05-09"
   },
   {
     "category":"Pro",
     "country":"hu",
     "name":"Tour de Hongrie",
-    "raceUrl":"race\/tour-de-hongrie-2026-gc",
-    "startDate":"2026-05-13",
-    "endDate":"2026-05-17"
+    "raceUrl":"race\/tour-de-hongrie-2027-gc",
+    "startDate":"2027-05-12",
+    "endDate":"2027-05-16"
   },
   {
     "category":"Pro",
     "country":"fr",
-    "name":"Classique Dunkerque \/ Grand prix des Hauts de France",
-    "raceUrl":"race\/classique-dunkerque-2026-result",
-    "startDate":"2026-05-19",
-    "endDate":"2026-05-19"
+    "name":"Classique Dunkerque Hauts de France",
+    "raceUrl":"race\/classique-dunkerque-2027-result",
+    "startDate":"2027-05-18",
+    "endDate":"2027-05-18"
   },
   {
     "category":"Pro",
     "country":"fr",
-    "name":"4 Jours de Dunkerque \/ GP des Hauts de France",
-    "raceUrl":"race\/4-jours-de-dunkerque-2026-gc",
-    "startDate":"2026-05-20",
-    "endDate":"2026-05-24"
+    "name":"4 Jours de Dunkerque des Hauts de France",
+    "raceUrl":"race\/4-jours-de-dunkerque-2027-gc",
+    "startDate":"2027-05-19",
+    "endDate":"2027-05-23"
   },
   {
     "category":"Pro",
     "country":"fr",
     "name":"Boucles de la Mayenne - Crédit Mutuel",
-    "raceUrl":"race\/boucles-de-la-mayenne-2026-gc",
-    "startDate":"2026-05-28",
-    "endDate":"2026-05-31"
+    "raceUrl":"race\/boucles-de-la-mayenne-2027-gc",
+    "startDate":"2027-05-27",
+    "endDate":"2027-05-30"
   },
   {
     "category":"Pro",
     "country":"no",
     "name":"Tour of Norway",
-    "raceUrl":"race\/tour-of-norway-2026-gc",
-    "startDate":"2026-05-28",
-    "endDate":"2026-05-31"
-  },
-  {
-    "category":"Pro",
-    "country":"be",
-    "name":"Ethias-Tour de Wallonie",
-    "raceUrl":"race\/tour-de-wallonie-2026-gc",
-    "startDate":"2026-06-01",
-    "endDate":"2026-06-05"
+    "raceUrl":"race\/tour-of-norway-2027-gc",
+    "startDate":"2027-05-27",
+    "endDate":"2027-05-30"
   },
   {
     "category":"Pro",
     "country":"be",
     "name":"Brussels Cycling Classic",
-    "raceUrl":"race\/brussels-cycling-classic-2026-result",
-    "startDate":"2026-06-07",
-    "endDate":"2026-06-07"
-  },
-  {
-    "category":"Pro",
-    "country":"be",
-    "name":"Circuit Franco-Belge",
-    "raceUrl":"race\/circuit-franco-belge-2026-result",
-    "startDate":"2026-06-10",
-    "endDate":"2026-06-10"
-  },
-  {
-    "category":"Pro",
-    "country":"be",
-    "name":"Baloise Belgium Tour",
-    "raceUrl":"race\/tour-of-belgium-2026-gc",
-    "startDate":"2026-06-17",
-    "endDate":"2026-06-21"
+    "raceUrl":"race\/brussels-cycling-classic-2027-result",
+    "startDate":"2027-06-06",
+    "endDate":"2027-06-06"
   },
   {
     "category":"Pro",
     "country":"si",
     "name":"Tour of Slovenia",
-    "raceUrl":"race\/tour-of-slovenia-2026-gc",
-    "startDate":"2026-06-17",
-    "endDate":"2026-06-21"
+    "raceUrl":"race\/tour-of-slovenia-2027-gc",
+    "startDate":"2027-06-17",
+    "endDate":"2027-06-20"
   },
   {
     "category":"Pro",
     "country":"cn",
     "name":"Tour of Magnificent Qinghai",
-    "raceUrl":"race\/tour-of-magnificent-qinghai-2026-gc",
-    "startDate":"2026-07-11",
-    "endDate":"2026-07-18"
+    "raceUrl":"race\/tour-of-magnificent-qinghai-2027-gc",
+    "startDate":"2027-07-10",
+    "endDate":"2027-07-17"
   },
   {
     "category":"Pro",
     "country":"dk",
-    "name":"PostNord Tour of Denmark",
-    "raceUrl":"race\/tour-of-denmark-2026-gc",
-    "startDate":"2026-07-29",
-    "endDate":"2026-08-02"
+    "name":"Tour of Denmark",
+    "raceUrl":"race\/tour-of-denmark-2027-gc",
+    "startDate":"2027-07-28",
+    "endDate":"2027-08-01"
   },
   {
     "category":"Pro",
     "country":"es",
     "name":"Vuelta a Burgos",
-    "raceUrl":"race\/vuelta-a-burgos-2026-gc",
-    "startDate":"2026-08-04",
-    "endDate":"2026-08-08"
+    "raceUrl":"race\/vuelta-a-burgos-2027-gc",
+    "startDate":"2027-08-03",
+    "endDate":"2027-08-07"
   },
   {
     "category":"Pro",
     "country":"no",
     "name":"Arctic Race of Norway",
-    "raceUrl":"race\/arctic-race-of-norway-2026-gc",
-    "startDate":"2026-08-13",
-    "endDate":"2026-08-16"
+    "raceUrl":"race\/arctic-race-of-norway-2027-gc",
+    "startDate":"2027-08-12",
+    "endDate":"2027-08-15"
   },
   {
     "category":"Pro",
     "country":"cz",
     "name":"Czech Tour",
-    "raceUrl":"race\/czech-tour-2026-gc",
-    "startDate":"2026-08-13",
-    "endDate":"2026-08-16"
+    "raceUrl":"race\/czech-tour-2027-gc",
+    "startDate":"2027-08-12",
+    "endDate":"2027-08-15"
   },
   {
     "category":"Pro",
     "country":"de",
     "name":"Lidl Deutschland Tour",
-    "raceUrl":"race\/deutschland-tour-2026-gc",
-    "startDate":"2026-08-19",
-    "endDate":"2026-08-23"
-  },
-  {
-    "category":"Pro",
-    "country":"gb",
-    "name":"Lloyds Tour of Britain Men",
-    "raceUrl":"race\/tour-of-britain-2026-gc",
-    "startDate":"2026-09-02",
-    "endDate":"2026-09-06"
-  },
-  {
-    "category":"Pro",
-    "country":"us",
-    "name":"Maryland Cycling Classic",
-    "raceUrl":"race\/maryland-cycling-classic-2026-gc",
-    "startDate":"2026-09-05",
-    "endDate":"2026-09-07"
-  },
-  {
-    "category":"Pro",
-    "country":"it",
-    "name":"GP Industria & Artigianato",
-    "raceUrl":"race\/gp-industria-artigianato-2026-result",
-    "startDate":"2026-09-06",
-    "endDate":"2026-09-06"
-  },
-  {
-    "category":"Pro",
-    "country":"it",
-    "name":"Gran Premio città di Peccioli - Coppa Sabatini",
-    "raceUrl":"race\/gp-citta-di-peccioli-2026-result",
-    "startDate":"2026-09-10",
-    "endDate":"2026-09-10"
+    "raceUrl":"race\/deutschland-tour-2027-gc",
+    "startDate":"2027-08-18",
+    "endDate":"2027-08-22"
   },
   {
     "category":"Pro",
     "country":"fr",
     "name":"GP de Fourmies \/ La Voix du Nord",
-    "raceUrl":"race\/gp-de-fourmies-2026-result",
-    "startDate":"2026-09-13",
-    "endDate":"2026-09-13"
-  },
-  {
-    "category":"Pro",
-    "country":"be",
-    "name":"Lotto Grand Prix de Wallonie",
-    "raceUrl":"race\/gp-de-wallonie-2026-result",
-    "startDate":"2026-09-16",
-    "endDate":"2026-09-16"
+    "raceUrl":"race\/gp-de-fourmies-2027-result",
+    "startDate":"2027-09-12",
+    "endDate":"2027-09-12"
   },
   {
     "category":"Pro",
     "country":"lu",
     "name":"Skoda Tour de Luxembourg",
-    "raceUrl":"race\/tour-de-luxembourg-2026-gc",
-    "startDate":"2026-09-16",
-    "endDate":"2026-09-20"
+    "raceUrl":"race\/tour-de-luxembourg-2027-gc",
+    "startDate":"2027-09-15",
+    "endDate":"2027-09-19"
   },
   {
     "category":"Pro",
     "country":"be",
     "name":"Flandrien 0.0 Classic",
-    "raceUrl":"race\/gp-impanis-van-petegem-2026-result",
-    "startDate":"2026-09-19",
-    "endDate":"2026-09-19"
+    "raceUrl":"race\/gp-impanis-van-petegem-2027-result",
+    "startDate":"2027-09-18",
+    "endDate":"2027-09-18"
   },
   {
     "category":"Pro",
     "country":"hr",
     "name":"CRO Race",
-    "raceUrl":"race\/tour-of-croatia-2026-gc",
-    "startDate":"2026-09-22",
-    "endDate":"2026-09-27"
+    "raceUrl":"race\/tour-of-croatia-2027-gc",
+    "startDate":"2027-09-22",
+    "endDate":"2027-09-26"
   },
   {
     "category":"Pro",
-    "country":"my",
-    "name":"Le Tour de Langkawi",
-    "raceUrl":"race\/tour-de-langkawi-2026-gc",
-    "startDate":"2026-09-27",
-    "endDate":"2026-10-04"
+    "country":"it",
+    "name":"GP Industria",
+    "raceUrl":"race\/gp-industria-artigianato-2027-result",
+    "startDate":"2027-09-26",
+    "endDate":"2027-09-26"
   },
   {
     "category":"Pro",
     "country":"it",
     "name":"Giro dell'Emilia",
-    "raceUrl":"race\/giro-dell-emilia-2026-result",
-    "startDate":"2026-10-03",
-    "endDate":"2026-10-03"
+    "raceUrl":"race\/giro-dell-emilia-2027-result",
+    "startDate":"2027-10-02",
+    "endDate":"2027-10-02"
+  },
+  {
+    "category":"Pro",
+    "country":"my",
+    "name":"Le Tour de Langkawi",
+    "raceUrl":"race\/tour-de-langkawi-2027-gc",
+    "startDate":"2027-10-03",
+    "endDate":"2027-10-10"
   },
   {
     "category":"Pro",
     "country":"de",
     "name":"Sparkassen Münsterland Giro",
-    "raceUrl":"race\/munsterland-giro-2026-result",
-    "startDate":"2026-10-03",
-    "endDate":"2026-10-03"
+    "raceUrl":"race\/munsterland-giro-2027-result",
+    "startDate":"2027-10-03",
+    "endDate":"2027-10-03"
   },
   {
     "category":"Pro",
     "country":"it",
     "name":"Coppa Bernocchi - GP Banco BPM",
-    "raceUrl":"race\/coppa-bernocchi-2026-result",
-    "startDate":"2026-10-05",
-    "endDate":"2026-10-05"
+    "raceUrl":"race\/coppa-bernocchi-2027-result",
+    "startDate":"2027-10-04",
+    "endDate":"2027-10-04"
   },
   {
     "category":"Pro",
     "country":"it",
     "name":"Tre Valli Varesine",
-    "raceUrl":"race\/tre-valli-varesine-2026-result",
-    "startDate":"2026-10-06",
-    "endDate":"2026-10-06"
+    "raceUrl":"race\/tre-valli-varesine-2027-result",
+    "startDate":"2027-10-05",
+    "endDate":"2027-10-05"
   },
   {
     "category":"Pro",
     "country":"it",
     "name":"Gran Piemonte",
-    "raceUrl":"race\/gran-piemonte-2026-result",
-    "startDate":"2026-10-08",
-    "endDate":"2026-10-08"
+    "raceUrl":"race\/gran-piemonte-2027-result",
+    "startDate":"2027-10-07",
+    "endDate":"2027-10-07"
   },
   {
     "category":"Pro",
     "country":"fr",
     "name":"Paris - Tours Elite",
-    "raceUrl":"race\/paris-tours-2026-result",
-    "startDate":"2026-10-11",
-    "endDate":"2026-10-11"
+    "raceUrl":"race\/paris-tours-2027-result",
+    "startDate":"2027-10-10",
+    "endDate":"2027-10-10"
   },
   {
     "category":"Pro",
     "country":"it",
     "name":"Giro del Veneto",
-    "raceUrl":"race\/giro-del-veneto-2026-result",
-    "startDate":"2026-10-14",
-    "endDate":"2026-10-14"
+    "raceUrl":"race\/giro-del-veneto-2027-result",
+    "startDate":"2027-10-13",
+    "endDate":"2027-10-13"
   },
   {
     "category":"Pro",
     "country":"jp",
     "name":"Utsunomiya Japan Cup Road Race",
-    "raceUrl":"race\/japan-cup-2026-result",
-    "startDate":"2026-10-18",
-    "endDate":"2026-10-18"
+    "raceUrl":"race\/japan-cup-2027-result",
+    "startDate":"2027-10-17",
+    "endDate":"2027-10-17"
   },
   {
     "category":"Pro",
     "country":"it",
     "name":"Veneto Classic",
-    "raceUrl":"race\/veneto-classic-2026-result",
-    "startDate":"2026-10-18",
-    "endDate":"2026-10-18"
+    "raceUrl":"race\/veneto-classic-2027-result",
+    "startDate":"2027-10-17",
+    "endDate":"2027-10-17"
   }
 ]

@@ -1,11 +1,11 @@
 <script>
-	import favicon from '#lib/assets/favicon.svg';
+	import qmark from '#lib/assets/qmark.png';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" href={qmark} />
 </svelte:head>
 
 <header class="top-bar">
@@ -38,7 +38,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #1e293b;
+    background-color: #4B3B61;
     color: white;
     z-index: 50;
   }
