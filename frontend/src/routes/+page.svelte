@@ -2,6 +2,10 @@
 
 <h1> Bienvenue sur mon site </h1>
 
+<h2>
+    Actuellement en thèse a l'Institut de Recherche en Informatique de Toulouse (IRIT) dans l'équipe ACADIE. 
+</h2>
+
 <section class="grid">
 
 <article class="box">
@@ -53,13 +57,14 @@
         border:2px  solid  #ffffff;
         padding:3px;
         border-radius:10px;
-        background: #202020 ;
+        background: #4B3B61 ;
     }
 
 
 
  h2, h3 {
         text-align:center;
+        transition: color 0.2s ease;
     }
 
 
@@ -69,5 +74,7 @@
         margin-top:40px;
         
     }
+
+
 
 </style>

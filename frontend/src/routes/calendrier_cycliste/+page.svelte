@@ -221,6 +221,8 @@
 	background: #eee;
 }
 
+
+
 tr.ongoing {
 	color: rgb(179, 29, 156)
 }
@@ -257,6 +259,7 @@ table {
 	right:0;
 	left:0;
 }
+
 
 
 

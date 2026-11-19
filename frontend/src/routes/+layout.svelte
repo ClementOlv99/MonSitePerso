@@ -1,6 +1,6 @@
 <script>
 	import qmark from '#lib/assets/qmark.png';
-
+  import '../app.css';
 	let { children } = $props();
 </script>
 
@@ -17,17 +17,22 @@
   </nav>
 </header>
 
+
 {@render children()}
 
 <style>
         :global(body) {
-                background-color: #282828;
+                background-color: #3B3B3B;
                 color: white;
                 margin: 0;  
         }
 
         :global(a) {
                 color: #8ab4f8;  
+                transition: color 0.2s ease;
+        }
+        :global(a:hover) {
+          color:#734F96;
         }
 
         
