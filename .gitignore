@@ -132,3 +132,4 @@ Desktop.ini
 *.trace.db
 *.lock.db
 backend/data/
+scraper/downloaded_files

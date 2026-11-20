@@ -4,13 +4,27 @@
     "rider":"HINDLEY Jai",
     "riderUrl":"rider\/jai-hindley",
     "country":"au",
-    "raceUrl":"race\/tour-down-under-2027-gc"
+    "raceUrl":"race\/tour-down-under-2027"
   },
   {
     "team":"Red Bull - BORA - hansgrohe (WT)",
     "rider":"PITHIE Laurence",
     "riderUrl":"rider\/laurence-pithie",
     "country":"nz",
-    "raceUrl":"race\/tour-down-under-2027-gc"
+    "raceUrl":"race\/tour-down-under-2027"
+  },
+  {
+    "team":"Tudor Pro Cycling Team (PRT)",
+    "rider":"STORER Michael",
+    "riderUrl":"rider\/michael-storer",
+    "country":"au",
+    "raceUrl":"race\/tour-down-under-2027"
+  },
+  {
+    "team":"Pinarello Q36.5 Pro Cycling Team (PRT)",
+    "rider":"HARPER Chris",
+    "riderUrl":"rider\/chris-harper",
+    "country":"au",
+    "raceUrl":"race\/tour-down-under-2027"
   }
 ]
