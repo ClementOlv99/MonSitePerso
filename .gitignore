@@ -94,6 +94,9 @@ pip-wheel-metadata/
 .coverage
 htmlcov/
 
+scraper/Startlist.json
+scraper/Races.json
+
 # ==========================================
 # IDEs, Editors & OS Files
 # ==========================================
