@@ -67,7 +67,7 @@ backend:
 				echo "[$$(date)] Scraper failed (exit $$rc), next attempt in $(SCRAPE_INTERVAL)s"; \
 			fi; \
 		fi; \
-		sleep 600; \
+		sleep 10; \
 	done; \
 	echo "Backend stopped, last lines of $(BACKEND_LOG):"; tail -n 30 $(BACKEND_LOG); exit 1
 

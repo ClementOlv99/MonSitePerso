@@ -13,6 +13,6 @@ export const variables = defineEnvVars({
 	PUBLIC_API_URL: {
 		public: true,
 		description: 'Spring Boot API base URL, used by browser-side fetches',
-		schema: (value) => value ?? 'http://localhost:8080/api'
+		schema: (value) => value ?? '/api'
 	}
 });

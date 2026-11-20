@@ -11,7 +11,6 @@ import Siteweb.backend.race.RaceEntity;
 
 @RestController
 @RequestMapping("/api/participation")
-@CrossOrigin(origins = "http://localhost:5173")
 public class ParticipationController {
 
     ParticipationService participationService;

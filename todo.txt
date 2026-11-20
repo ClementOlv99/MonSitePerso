@@ -1,0 +1,6 @@
+1. Adapter pour que je puisse tester en local sur la raspberry. 
+2. Terminer l'onglet projet perso avec le cache 
+3. Faire l'onglet présentation 
+4. Faire l'onglet mes recherches
+5. Faire l'onglet reccommendations 
+6. set up le serveur pour qu'il soit accessible publiquement (Cloudflare tunnel)

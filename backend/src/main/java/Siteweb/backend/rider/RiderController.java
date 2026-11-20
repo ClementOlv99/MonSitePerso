@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/rider")
-@CrossOrigin(origins = "http://localhost:5173") // let the SvelteKit dev server call this from the browser
 public class RiderController {
 
     private final RiderService riderService;

@@ -16,5 +16,19 @@ export default defineConfig({
 			// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 			adapter: adapter()
 		})
-	]
+	],
+
+	server: {
+		host: true, // écoute sur toutes les interfaces (0.0.0.0) : accessible via 192.168.1.17
+		port: 5173,
+		strictPort: true, // échoue au lieu de passer silencieusement sur 5174
+		proxy: {
+			// Le navigateur appelle /api/... sur le port 5173, Vite transmet à Spring sur la Pi
+			'/api': {
+				target: 'http://127.0.0.1:8080',
+				// Seules les lectures passent : les POST du scraper restent internes à la Pi
+				bypass: (req) => (req.method === 'GET' ? undefined : false)
+			}
+		}
+	}
 });
