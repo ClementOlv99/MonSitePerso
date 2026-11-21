@@ -1,10 +1,20 @@
 import { error } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
 
+const CACHE_MS = 10 * 60 * 1000; // 10 minutes
+let cache = null;                // { repos, time }
+
 const GITHUB_USER = 'ClementOlv99';
 const URL = `https://api.github.com/users/${GITHUB_USER}/repos?sort=pushed&per_page=30`;
 
 export async function load({ fetch }) {
+
+	if (cache && Date.now() - cache.time < CACHE_MS) {
+
+	return { projects: cache.projects, failed: false };
+
+	}
+
 	let response;
 
 	try {
@@ -38,6 +48,7 @@ export async function load({ fetch }) {
     		topics: project.topics ?? [],
     		pushedAt: project.pushed_at
     	}));
+		cache = { projects, time: Date.now() };
     	return { projects, failed: false };
 }
 

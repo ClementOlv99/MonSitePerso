@@ -10,7 +10,7 @@
 
 <article class="box">
     <h2> <a href="/info"> Plus Sur Moi </a> </h2>
-    <h3>  Présentation, Mon parcours, Mon CV </h3>
+    <h3>  Mon Parcours, Mes Expériences, Mes Compétences...</h3>
 </article>
 
 <article class="box">
@@ -41,8 +41,6 @@
 </section>
 
 <style>
-
-    @import url('https://googleapis.com');
 
     .grid {
         display:grid;

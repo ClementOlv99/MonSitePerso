@@ -46,7 +46,7 @@
 	}
 
     .grid {
-        margin-top: 100px;
+        margin-top: 50px;
         display:grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 1rem
@@ -58,17 +58,17 @@
 	flex-direction: column;
 	gap: 0.5rem;
 	padding: 1rem 1.25rem;
-	border: 2px solid black;
+	border: 2px solid white;
 	border-radius: 8px;
 	background: #4B3B61;
 	color: inherit;
 	text-decoration: none;
 	transition: border-color 0.15s, transform 0.15s;
-    min-height: 180px;
+    min-height: 150px;
 }
 
 h1 {
-    margin-top: 50px;
+    margin-top: 25px;
     text-align: center;
     font-size:50px;
 }
