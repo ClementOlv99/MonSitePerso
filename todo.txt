@@ -1,6 +1,8 @@
-1. Adapter pour que je puisse tester en local sur la raspberry. 
-2. Terminer l'onglet projet perso avec le cache 
-3. Faire l'onglet présentation 
-4. Faire l'onglet mes recherches
-5. Faire l'onglet reccommendations 
-6. set up le serveur pour qu'il soit accessible publiquement (Cloudflare tunnel)
+A faire :
+- Faire l'onglet mes recherches
+- Faire l'onglet recommendations 
+- Rendre la page calendrier beaucoup plus jolie (comme PCM25)
+- Implémenter le MTGDle dans le site
+
+
+- set up le serveur pour qu'il soit accessible publiquement (Cloudflare tunnel)

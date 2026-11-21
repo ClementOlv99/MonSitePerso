@@ -58,7 +58,7 @@
 	flex-direction: column;
 	gap: 0.5rem;
 	padding: 1rem 1.25rem;
-	border: 2px solid white;
+	border: 2px solid #734F96;
 	border-radius: 8px;
 	background: #4B3B61;
 	color: inherit;
@@ -74,7 +74,8 @@ h1 {
 }
 
 .card:hover {
-	border-color: #734F96;
+	border-color: white;
+	transform: translateY(-4px);
 }
 
 .card h2 {
