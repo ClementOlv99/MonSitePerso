@@ -1,9 +1,9 @@
 <script>
-    import NII from '#lib/assets/NII.png';
-    import Bradford from '#lib/assets/bradford.png';
-    import N7 from '#lib/assets/n7.jpg';
-    import Barthou from '#lib/assets/barthou.png';
-    import Estourn from '#lib/assets/estournelles.jpg';
+    import NII from '#lib/assets/logoinstitution/NII.png';
+    import Bradford from '#lib/assets/logoinstitution/bradford.png';
+    import N7 from '#lib/assets/logoinstitution/n7.jpg';
+    import Barthou from '#lib/assets/logoinstitution/barthou.png';
+    import Estourn from '#lib/assets/logoinstitution/estournelles.jpg';
 </script>
 
 
