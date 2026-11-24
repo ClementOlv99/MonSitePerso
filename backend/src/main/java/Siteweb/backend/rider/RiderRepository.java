@@ -21,4 +21,6 @@ public interface RiderRepository extends JpaRepository<RiderEntity, Long> {
 
 
 
+
+
 }

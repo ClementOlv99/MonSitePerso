@@ -136,3 +136,6 @@ Desktop.ini
 *.lock.db
 backend/data/
 scraper/downloaded_files
+
+# Scrape stamp written by "make backend"
+.last_scrape

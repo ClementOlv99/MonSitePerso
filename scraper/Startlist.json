@@ -33,5 +33,19 @@
     "riderUrl":"rider\/urko-berrade-fernandez",
     "country":"es",
     "raceUrl":"race\/tour-down-under-2027"
+  },
+  {
+    "team":"Movistar Team (WT)",
+    "rider":"RAMÍREZ Mateo",
+    "riderUrl":"rider\/mateo-pablo-ramirez",
+    "country":"ec",
+    "raceUrl":"race\/tour-down-under-2027"
+  },
+  {
+    "team":"UAE Team Emirates - XRG (WT)",
+    "rider":"NARVÁEZ Jhonatan",
+    "riderUrl":"rider\/jhonatan-narvaez",
+    "country":"ec",
+    "raceUrl":"race\/tour-down-under-2027"
   }
 ]

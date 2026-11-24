@@ -26,4 +26,10 @@ public class RiderService {
         }
     }
 
+    public List<RiderDTO> findByUrls(List<String> urls) {
+    return riderRepository.findAllByRiderUrlIn(urls).stream()
+            .map(r -> new RiderDTO(r.getId(), r.getRiderUrl(), r.getPrenom(), r.getNom(), r.getCountry()))
+            .toList();
+    }
+
 }

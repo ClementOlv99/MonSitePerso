@@ -4,13 +4,14 @@
 
 	let query = $state('');
 	let suggestions = $state([]);
-	let selectedRiders = $state([]);
 	let timer;
 	let calendarOpen = $state(false);
 
 
-	let { data } = $props();          // Svelte 5. In Svelte 4: export let data;
 
+
+	let { data } = $props();          // Svelte 5. In Svelte 4: export let data;
+	let selectedRiders = $state(data.presets);
 
 	function formatDate(iso) {
 		const [year, month, day] = iso.split('-');   // "2027-01-19" -> ["2027","01","19"]
@@ -46,17 +47,18 @@
 		}, 250);
 	}
 
-	async function selectRider(rider) {
-		suggestions = []
-		query = '';
-		if (selectedRiders.some((entry) => entry[0].id === rider.id)) return;
 
-		const res = await fetch(`${PUBLIC_API_URL}/participation/rider/${rider.id}`);
-		if (res.ok) {
-			selectedRiders.push([rider, await res.json()]);
-		}
-		
+
+	async function selectRider(rider) {
+	suggestions = [];
+	query = '';
+	if (selectedRiders.some((entry) => entry.rider.id === rider.id)) return;
+
+	const res = await fetch(`${PUBLIC_API_URL}/participation/rider/${rider.id}`);
+	if (res.ok) {
+		selectedRiders.push({ rider, races: await res.json() });
 	}
+}
 
 	function isOngoing(race) {
 		const today = new Date();
@@ -77,8 +79,8 @@
 		return (todaystring <= race.startDate && race.startDate <= sundaystring && !isOngoing(race))
 	}
 
-	function removeRider(rider){
-		selectedRiders = selectedRiders.filter((entry) => entry[0].id !== rider.id) 
+	function removeRider(id) {
+		selectedRiders = selectedRiders.filter((entry) => entry.rider.id !== id);
 	}
 
     const DAY_MS = 24 * 60 * 60 * 1000;   // milliseconds in one day
@@ -91,7 +93,7 @@
 
     // today's date as a day number
     function todayDay() {
-    	const t = new Date(2027, 0, 22);
+    	const t = new Date();
     	return Date.UTC(t.getFullYear(), t.getMonth(), t.getDate()) / DAY_MS;
     }
 
@@ -107,8 +109,8 @@
     	return new Date(day * DAY_MS).getUTCDay() === 1;   // 0 = Sunday, 1 = Monday…
     }
 
-    const DAYS = 60;          // width of the window, in days
-    const MAIN_LANES = 4;     // number of lines in the top calendar
+    const DAYS = 42;          // width of the window, in days
+    const MAIN_LANES = 3;     // number of lines in the top calendar
 
     // day number of the 1st of the month that contains `day`
     function firstOfMonth(day) {
@@ -210,6 +212,43 @@
 	    {@render timeline(mainLayout, MAIN_LANES)}
         <button type="button" class="arrow" onclick={() => (start = nextMonday(start))}>›</button>
 	</div>
+	<div class="search">
+		<input bind:value={query} 
+		oninput={onSearchInput} 
+		onkeydown={(e) => { if (e.key === 'Escape') suggestions = []; }} 
+		onblur={() => setTimeout(() => (suggestions = []), 150)} 
+		placeholder="Search a rider…"
+		/>
+		{#if suggestions.length > 0}
+			<ul class="dropdown">
+				{#each suggestions as rider (rider.id)}
+					<li>
+						<button type="button" onclick={() => selectRider(rider)}>
+							{flag(rider.country)} {rider.prenom} {rider.nom}
+						</button>
+					</li>
+				{/each}
+			</ul>
+		{/if}
+	</div>
+	{#each selectedRiders as entry (entry.rider.id)}
+	{@const layout = assignLanes(entry.races)}
+	<div class="row rider-row">
+		<div class="label">
+			<button
+				type="button"
+				class="close"
+				aria-label="Retirer {entry.rider.prenom} {entry.rider.nom}"
+				onclick={() => removeRider(entry.rider.id)}
+			>
+				×
+			</button>
+			<span class="rider-name">{flag(entry.rider.country)} {entry.rider.prenom} {entry.rider.nom}</span>
+		</div>
+		{@render timeline(layout, 1)}
+	</div>
+{/each}
+
 </div>
 
 
@@ -257,7 +296,7 @@
 
 .row {
 	display: grid;
-	grid-template-columns: 220px 2rem 1fr 2rem;
+	grid-template-columns: 300px 2rem 1fr 2rem;
 	column-gap: 0.5rem;
 	align-items: stretch;
 }
@@ -284,21 +323,25 @@
 }
 
 .timeline {
-	grid-column: 3;
-	display: grid;
-	grid-template-columns: repeat(var(--days), minmax(0, 1fr));
-	grid-template-rows: repeat(var(--rows), 28px);
-	background: #262b31;
-	border: 1px solid #555;
+        grid-column: 3;
+        display: grid;
+        grid-template-columns: repeat(var(--days), minmax(0, 1fr));
+        grid-template-rows: repeat(var(--rows), 28px);
+        background: #262b31;
+        background-image: repeating-linear-gradient(
+                to bottom,
+                transparent 0 27px,
+                #ffffff12 27px 28px
+        );
+        border: 1px solid #555;
 }
 
 .day {
 	grid-row: 1 / -1;
-	border-left: 1px solid #ffffff12;
 }
 
 .day.monday {
-	border-left-color: #ffffff40;
+	border-left: 1px solid #ffffff40;
 }
 
 .day.today {
@@ -352,5 +395,128 @@
                   color:black; }
 .race.vuelta    { background: #FF0000; }
 .race.giro     { background: #FF286E; }
+
+.search-row {
+	margin-top: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.search {
+	grid-column: 1;
+	position: relative;
+}
+
+.search input {
+	width: 100%;
+	padding: 6px 10px;
+	box-sizing: border-box;
+}
+
+.layout {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		align-items: start;
+		padding-inline: 2rem;
+		font-size:20px
+
+	}
+
+.search {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.search input {
+	margin-top:30px;
+	width: 15%;
+	padding: 6px 10px;
+	box-sizing: border-box;
+}
+
+.search button {
+	width: 100%;
+	text-align: left;
+	padding: 6px 10px;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.search button:hover {
+	background: #eee;
+}
+
+
+.search ul {
+	width: 15%;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: white;
+	border: 1px solid #ccc;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.rider-row {
+	margin: 0;
+}
+
+.rider-row + .rider-row .timeline {
+	border-top: none;
+}
+
+.rider-row .label {
+	font-weight: normal;
+	border-bottom: 1px solid #ffffff12;
+}
+
+.rider-name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 20px;
+}
+
+.close {
+	flex-shrink: 0;
+	width: 1.4rem;
+	padding: 0;
+	border: none;
+	background: none;
+	color: #e0a526;
+	font-size: 1.3rem;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.close:hover {
+	color: #ff6b6b;
+}
+
+.hint {
+	color: #888;
+	font-weight: normal;
+}
+
+@media (max-width: 800px) {
+	.planning {
+		padding-inline: 1rem;
+		overflow-x: auto;
+	}
+
+	.row {
+		min-width: 800px;
+		grid-template-columns: 150px 2rem 1fr 2rem;
+	}
+}
+
+
 
 </style>

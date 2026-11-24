@@ -19,4 +19,10 @@ public class RiderController {
     public List<RiderDTO> searchRiders(@RequestParam("q") String q) {
         return riderService.searchRiders(q);
     }
+
+    // Called by +page.server.js for the preset riders: GET /api/rider/by-urls?urls=rider/x&urls=rider/y
+    @GetMapping("/by-urls")
+    public List<RiderDTO> findByUrls(@RequestParam("urls") List<String> urls) {
+        return riderService.findByUrls(urls);
+    }
 }
