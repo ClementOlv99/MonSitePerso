@@ -26,5 +26,12 @@
     "riderUrl":"rider\/chris-harper",
     "country":"au",
     "raceUrl":"race\/tour-down-under-2027"
+  },
+  {
+    "team":"XDS Astana Team (WT)",
+    "rider":"BERRADE Urko",
+    "riderUrl":"rider\/urko-berrade-fernandez",
+    "country":"es",
+    "raceUrl":"race\/tour-down-under-2027"
   }
 ]
