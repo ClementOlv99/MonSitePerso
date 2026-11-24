@@ -19,7 +19,7 @@ def scrape_races(year):
         sb.activate_cdp_mode()
         for name, circuit in CIRCUITS.items():
             sb.goto(BASE.format(year, circuit))
-            sb.wait_for_element("table.basic", timeout=15)
+            sb.wait_for_element("table.basic", timeout=120)
             html = sb.get_page_source()
 
             df = pd.read_html(StringIO(html), attrs={"class": "basic"}, extract_links="body")[0]

@@ -15,7 +15,7 @@ def scrape_startlist(race_path):
     with SB(uc=True) as sb:
         sb.activate_cdp_mode()
         sb.goto(BASE.format(race_path))
-        sb.wait_for_element("ul.startlist_v4", timeout=15)
+        sb.wait_for_element("ul.startlist_v4", timeout=120)
         html = sb.get_page_source()
 
     soup = BeautifulSoup(html, "html.parser")
