@@ -47,5 +47,12 @@
     "riderUrl":"rider\/jhonatan-narvaez",
     "country":"ec",
     "raceUrl":"race\/tour-down-under-2027"
+  },
+  {
+    "team":"Soudal Safety Jogger  (WT)",
+    "rider":"MAGNIER Paul",
+    "riderUrl":"rider\/paul-magnier",
+    "country":"fr",
+    "raceUrl":"race\/tour-down-under-2027"
   }
 ]

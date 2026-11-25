@@ -32,7 +32,7 @@
             {/if}
         {/each}
     </div>
-    <h3> <a href="https://github.com/ClementOlv99?tab=repositories">Si vous voulez voir le reste des projets</a> </h3>
+    <h3> <a href="https://github.com/ClementOlv99?tab=repositories" target="_blank" rel="noopener noreferrer">Si vous voulez voir le reste des projets</a> </h3>
 </main>
 
 

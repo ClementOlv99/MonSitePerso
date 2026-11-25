@@ -21,7 +21,7 @@
     <h2 class="inbox">Stage a l'Institut National de l'Informatique (N.I.I)</h2>
     <h4> 🗺️ Tokyo, Japon </h4>
     <h4> 📆 Mars 2026 - Août 2026 (6 mois) </h4>
-    <h3>Stage de recherche sur le sujet : <a href="/Rapport_PFE.pdf"  target="_blank" rel="noopener noreferrer">Calcul de séquent pour preuve d'invariant dans le domaine des voitures autonomes" </a> </h3>
+    <h3>Stage de recherche sur le sujet : <a href="/Rapport_PFE.pdf"  target="_blank" rel="noopener noreferrer">Calcul de séquent pour preuve d'invariant dans le domaine des voitures autonomes</a> </h3>
 </article>    
 
 <article class="box">

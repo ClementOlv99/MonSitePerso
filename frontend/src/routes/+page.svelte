@@ -34,7 +34,7 @@
 </article>
 
 <article class="box">
-    <h2> <a href="/cardguesser"> MTGdle </a> </h2>
+    <h2> <a href="https://clementolv99.github.io/guess-the-mtg-card/web/" target="_blank" rel="noopener noreferrer"> MTGdle </a> </h2>
     <h3> Pour les fans de <a href="https://edhrec.com/games/spellify" target="_blank" rel="noopener noreferrer"> Spellify </a> qui en veulent plus d'un par jour </h3>
 </article>
 
