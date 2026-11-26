@@ -26,7 +26,9 @@ def scrape_races(year):
 
             soup = BeautifulSoup(html, "lxml")
             countries = []
+            cancelled = []
             for row in soup.select("table.basic tbody tr"):
+                cancelled.append("striked" in (row.get("class") or []))
                 span = row.select_one("span.flag")
                 if span is None:
                     countries.append(None)
@@ -38,6 +40,7 @@ def scrape_races(year):
                 raise ValueError(f"{name}: {len(countries)} flags for {len(df)} rows")
 
             df["Country"] = countries
+            df["Cancelled"] = cancelled
             frames.append(df)
 
             sb.sleep(3)
@@ -76,6 +79,9 @@ def scrape_races(year):
                 dfRaces.at[i, "Class"] = "VUELTA"
             case "Milano-Sanremo" | "Paris-Roubaix Hauts-de-France" | "Liège-Bastogne-Liège" | "Il Lombardia" | "Ronde van Vlaanderen ME":
                 dfRaces.at[i, "Class"] = "Monument"
+
+    dfRaces.loc[dfRaces["Cancelled"], "RaceName"] += " - CANCELLED"
+    dfRaces = dfRaces.drop(columns=["Cancelled"])
 
     dfRaces = dfRaces.rename(columns={
         "RaceURL": "raceUrl",

@@ -7,8 +7,12 @@ const API_URL = env.API_URL ?? 'http://localhost:8080/api';
 // Riders loaded automatically on the calendar page. Edit this list freely.
 // Use the riderUrl (see scraper/Startlist.json), not the id: ids change every season.
 const PRESET_RIDERS = [
-	'rider/jai-hindley',
-	'rider/laurence-pithie',
+	'rider/tadej-pogacar',
+	'rider/paul-seixas',
+	'rider/mathieu-van-der-poel',
+	'rider/lenny-martinez',
+	'rider/wout-van-aert',
+	'rider/paul-magnier'
 ];
 
 async function loadPresets(fetch) {

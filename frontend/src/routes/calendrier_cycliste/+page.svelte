@@ -109,7 +109,7 @@
     	return new Date(day * DAY_MS).getUTCDay() === 1;   // 0 = Sunday, 1 = Monday…
     }
 
-    const DAYS = 42;          // width of the window, in days
+    const DAYS = 49;          // width of the window, in days
     const MAIN_LANES = 3;     // number of lines in the top calendar
 
     // day number of the 1st of the month that contains `day`
@@ -188,6 +188,10 @@
             const w = (day + 3) % 7;
             return day - (w === 0 ? 7 : w);
     }
+
+	function isCancelled(race) {
+		return race.name.includes("CANCELLED")
+	}
 	
 </script>
 
@@ -269,7 +273,8 @@
 		{#each layout.placed as p (p.race.id)}
 			{#if isVisible(p)}
 				<div
-					class="race {categoryClass(p.race.category)}"
+					class="race {categoryClass(p.race.category)} "
+					class:cancelled={isCancelled(p.race)}
 					style="grid-column: {col(p.s)} / {col(p.e) + 1}; grid-row: {p.lane + 1}"
                     onmouseenter={(e) => showTip(e,p.race)}
                     onmousemove={(e) => showTip(e,p.race)}
@@ -389,12 +394,13 @@
 
 
 .race.uwt      { background: #5072ac; }
-.race.pro      { background: #5b7a2b; }
+.race.pro      { background: #374e13; }
 .race.monument { background: #3d4e9c; }
 .race.tdf       { background: #FFD100;
                   color:black; }
 .race.vuelta    { background: #FF0000; }
 .race.giro     { background: #FF286E; }
+.race.cancelled { background: black}
 
 .search-row {
 	margin-top: 1.5rem;
@@ -429,7 +435,7 @@
 
 .search input {
 	margin-top:30px;
-	width: 15%;
+	width: 13.8%;
 	padding: 6px 10px;
 	box-sizing: border-box;
 }
@@ -449,7 +455,7 @@
 
 
 .search ul {
-	width: 15%;
+	width: 13.8%;
 	position: absolute;
 	top: 100%;
 	left: 0;
