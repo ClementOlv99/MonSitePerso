@@ -9,6 +9,8 @@ BACKEND_LOG     := backend.log
 WAIT_SECONDS    := 120
 SCRAPE_INTERVAL := 259200
 SCRAPE_TIMEOUT  := 2h
+SCRAPE_ATTEMPTS := 3
+SCRAPE_RETRY_DELAY := 60
 SCRAPE_STAMP    := .last_scrape
 
 .PHONY: frontend backend backend_noscrape clean setup clean_database
@@ -19,11 +21,13 @@ frontend:
 
 # 2. Start Spring Boot in the background, wait until it answers, then run the scraper
 #    every SCRAPE_INTERVAL seconds while the backend is alive (Ctrl+C stops everything).
-#    The time of the last scrape is kept in SCRAPE_STAMP, so restarts don't re-scrape.
+#    SCRAPE_STAMP is deleted on launch so every start scrapes once, then it tracks the interval.
+#    A failed scrape is retried up to SCRAPE_ATTEMPTS times in total (SCRAPE_RETRY_DELAY apart).
 backend:
 	@if fuser -s $(PORT)/tcp 2>/dev/null || curl -s -o /dev/null $(HEALTH_URL); then \
 		echo "Port $(PORT) is already in use, stop the other backend first"; exit 1; \
 	fi
+	@rm -f $(SCRAPE_STAMP)
 	@(cd $(BACKEND_DIR) && exec ./mvnw spring-boot:run) > $(BACKEND_LOG) 2>&1 & \
 	PID=$$!; \
 	SCRAPING=0; \
@@ -55,17 +59,23 @@ backend:
 	while kill -0 $$PID 2>/dev/null; do \
 		last=$$(stat -c %Y $(SCRAPE_STAMP) 2>/dev/null || echo 0); \
 		if [ $$(( $$(date +%s) - $$last )) -ge $(SCRAPE_INTERVAL) ]; then \
-			echo "[$$(date)] Running the scraper..."; \
 			touch $(SCRAPE_STAMP); \
-			SCRAPING=1; \
-			(cd $(SCRAPER_DIR) && xvfb-run -a timeout --foreground -k 60 $(SCRAPE_TIMEOUT) $(PYTHON) Scraper_Manager.py); \
-			rc=$$?; \
-			SCRAPING=0; \
-			if [ $$rc -eq 124 ]; then \
-				echo "[$$(date)] Scraper timed out after $(SCRAPE_TIMEOUT), next attempt in $(SCRAPE_INTERVAL)s"; \
-			elif [ $$rc -ne 0 ]; then \
-				echo "[$$(date)] Scraper failed (exit $$rc), next attempt in $(SCRAPE_INTERVAL)s"; \
-			fi; \
+			for attempt in $$(seq $(SCRAPE_ATTEMPTS)); do \
+				echo "[$$(date)] Running the scraper (attempt $$attempt/$(SCRAPE_ATTEMPTS))..."; \
+				SCRAPING=1; \
+				(cd $(SCRAPER_DIR) && xvfb-run -a timeout --foreground -k 60 $(SCRAPE_TIMEOUT) $(PYTHON) Scraper_Manager.py); \
+				rc=$$?; \
+				SCRAPING=0; \
+				if [ $$rc -eq 0 ]; then break; fi; \
+				if [ $$rc -eq 124 ]; then msg="timed out after $(SCRAPE_TIMEOUT)"; else msg="failed (exit $$rc)"; fi; \
+				if [ $$attempt -lt $(SCRAPE_ATTEMPTS) ]; then \
+					echo "[$$(date)] Scraper $$msg, retrying in $(SCRAPE_RETRY_DELAY)s"; \
+					sleep $(SCRAPE_RETRY_DELAY); \
+					kill -0 $$PID 2>/dev/null || break; \
+				else \
+					echo "[$$(date)] Scraper $$msg, $(SCRAPE_ATTEMPTS) failures in a row, next attempt in $(SCRAPE_INTERVAL)s"; \
+				fi; \
+			done; \
 		fi; \
 		sleep 600; \
 	done; \

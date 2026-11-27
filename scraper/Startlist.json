@@ -54,5 +54,61 @@
     "riderUrl":"rider\/paul-magnier",
     "country":"fr",
     "raceUrl":"race\/tour-down-under-2027"
+  },
+  {
+    "team":"Uno-X Mobility (WT)",
+    "rider":"KULSET Johannes",
+    "riderUrl":"rider\/johannes-kulset",
+    "country":"no",
+    "raceUrl":"race\/giro-d-italia-2027"
+  },
+  {
+    "team":"NSN Cycling Team (WT)",
+    "rider":"CARAPAZ Richard",
+    "riderUrl":"rider\/richard-carapaz",
+    "country":"ec",
+    "raceUrl":"race\/giro-d-italia-2027"
+  },
+  {
+    "team":"NSN Cycling Team (WT)",
+    "rider":"BUITRAGO Santiago",
+    "riderUrl":"rider\/santiago-buitrago-sanchez",
+    "country":"co",
+    "raceUrl":"race\/giro-d-italia-2027"
+  },
+  {
+    "team":"Cofidis (PRT)",
+    "rider":"FRETIN Milan",
+    "riderUrl":"rider\/milan-fretin",
+    "country":"be",
+    "raceUrl":"race\/tour-de-france-2027"
+  },
+  {
+    "team":"UAE Team Emirates - XRG (WT)",
+    "rider":"POGAČAR Tadej",
+    "riderUrl":"rider\/tadej-pogacar",
+    "country":"si",
+    "raceUrl":"race\/tour-de-france-2027"
+  },
+  {
+    "team":"Team Visma | Lease a Bike (WT)",
+    "rider":"VINGEGAARD Jonas",
+    "riderUrl":"rider\/jonas-vingegaard",
+    "country":"dk",
+    "raceUrl":"race\/tour-de-france-2027"
+  },
+  {
+    "team":"Uno-X Mobility (WT)",
+    "rider":"KULSET Johannes",
+    "riderUrl":"rider\/johannes-kulset",
+    "country":"no",
+    "raceUrl":"race\/vuelta-a-espana-2027"
+  },
+  {
+    "team":"UAE Team Emirates - XRG (WT)",
+    "rider":"POGAČAR Tadej",
+    "riderUrl":"rider\/tadej-pogacar",
+    "country":"si",
+    "raceUrl":"race\/vuelta-a-espana-2027"
   }
 ]

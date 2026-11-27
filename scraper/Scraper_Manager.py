@@ -31,6 +31,9 @@ def is_within_a_month(iso_date):
     limit = (pd.Timestamp(reference) + pd.DateOffset(months=1)).date()
     return reference <= date <= limit
 
+def is_big(category):
+    return (category == "TDF" or category == "GIRO" or category == "VUELTA" or category == "Monument")
+
 
 
 def to_payload(df):
@@ -71,7 +74,7 @@ def main():
     startlist = pd.DataFrame()
 
     for i in range(len(races)):
-        if is_within_a_month(races.at[i, "startDate"]):
+        if is_within_a_month(races.at[i, "startDate"]) or is_big((races.at[i, "category"])):
             current = scrape_startlist(races.at[i, "raceUrl"])
             startlist = pd.concat([startlist, current], join='outer')
         
